@@ -1,15 +1,9 @@
-import "./globals.css";
+import './globals.css'
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="min-h-full flex flex-col">
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
-  );
+  )
 }
